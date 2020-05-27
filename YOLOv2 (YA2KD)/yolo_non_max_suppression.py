@@ -22,7 +22,7 @@ def yolo_non_max_suppression(scores, boxes, classes, max_boxes = 10, iou_thresho
     """
     
     max_boxes_tensor = K.variable(max_boxes, dtype='int32')     # tensor to be used in tf.image.non_max_suppression()
-    K.get_session().run(tf.compat.v1.variables_initializer([max_boxes_tensor])) # initialize variable max_boxes_tensor
+    K.get_session().run(tf.variables_initializer([max_boxes_tensor]))
     
     # Use tf.image.non_max_suppression() to get the list of indices corresponding to boxes you keep
     nms_indices = tf.image.non_max_suppression(boxes, scores, max_boxes, iou_threshold)

@@ -4,6 +4,7 @@ import imageio
 from keras import backend as K
 from yolo_utils import generate_colors, preprocess_image, draw_boxes
 
+
 def predict(sess, yolo_model, scores, boxes, classes, class_names, image_file):
     """
     Runs the graph stored in "sess" to predict boxes for "image_file". Prints and plots the predictions.

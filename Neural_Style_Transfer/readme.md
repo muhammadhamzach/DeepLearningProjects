@@ -11,6 +11,7 @@
 
 ## Note
 * A Jupyter Notebook is also provided to play with this program (for that notebook all these python files in repository are un-necessary and it can work standalone i.e it only needs the vgg-model link and the content/style image paths)
+* vgg-model isnt in this repository but the download instructions are in the pre-trained_mode/readme.md file
 
 
 ## Reference

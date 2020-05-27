@@ -5,5 +5,8 @@
 * User can use their own .wav files with activate embedded in it. The audio files should be 10sec. Extra length will be trimmed.
 * If user want to change the trigger word then they can navigate to raw_data/activates and put the activiate examples in it and then uncomment the lines in main.py to create a training example from the activate files. This can then be put in a loop of m-examples and the model can be trained on it from there.
 
+## Note
+* X.npy file isnt in this repository. To download it visit the XY_train/readme.md for details
+
 ### Reference
 This code is modified from the sequence modeling course on deeplearning.ai
